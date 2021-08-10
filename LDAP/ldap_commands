@@ -1,0 +1,13 @@
+# to install the LDAP utilities
+apt install ldap-utils
+
+#to hashing the user password
+slappasswd -h {SSHA}
+
+ldapadd -c -D "cn=admin,dc=ltacademy,dc=com" -h 127.0.0.1 -w'admin' -x -f ROOT_dc
+ldapadd -c -D "cn=admin,dc=ltacademy,dc=com" -h 127.0.0.1 -w'admin' -x -f Directory_Structure 
+ldapadd -c -D "cn=admin,dc=ltacademy,dc=com" -h 127.0.0.1 -w'admin' -x -f Users
+ldapadd -c -D "cn=admin,dc=ltacademy,dc=com" -h 127.0.0.1 -w'admin' -x -f Books
+
+ 
+
