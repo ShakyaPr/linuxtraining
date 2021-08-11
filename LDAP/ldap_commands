@@ -9,5 +9,14 @@ ldapadd -c -D "cn=admin,dc=ltacademy,dc=com" -h 127.0.0.1 -w'admin' -x -f Direct
 ldapadd -c -D "cn=admin,dc=ltacademy,dc=com" -h 127.0.0.1 -w'admin' -x -f Users
 ldapadd -c -D "cn=admin,dc=ltacademy,dc=com" -h 127.0.0.1 -w'admin' -x -f Books
 
+ldapsearch -D "cn=admin,dc=ltacademy,dc=com" -h 127.0.0.1 -w'admin' -b dc=ltacademy,dc=com
+
+#to stop the slapd service
+sudo /etc/init.d/slapd stop
+
+#to start the slpad service
+sudo /etc/init.d/slapd start
+
+ps aux | grep slapd
  
 
