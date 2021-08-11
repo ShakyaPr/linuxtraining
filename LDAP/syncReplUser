@@ -1,0 +1,7 @@
+dn: uid=syncrepl,ou=System,dc=ltacademy,dc=com
+uid: syncrepl
+ou: System
+userPassword: admin
+description: Special account for SyncRepl.
+objectClass: account
+objectClass: simpleSecurityObject
