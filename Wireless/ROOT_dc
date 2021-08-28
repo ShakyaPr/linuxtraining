@@ -1,0 +1,5 @@
+dn: dc=wso2demo, dc=com
+dc: wso2demo
+o: wso2demo
+objectclass: organization
+objectclass: dcObject
