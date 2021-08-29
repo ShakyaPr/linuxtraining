@@ -10,47 +10,47 @@ description: Groups of staff
 
 ##Creating LDAP staff users
 
-dn: uid=Sam,ou=staff,dc=wso2demo,dc=com
+dn: uid=sam,ou=staff,dc=wso2demo,dc=com
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
 objectClass: top
 cn: Sam
 sn: Curran
 displayName: Sam Curran
-mail: sam.curran@wso2demo.com
+mail: sam@wso2demo.com
 givenNAme: Demo
 userPassword: {SSHA}EfvFG/MSWJW0RFrJJdGIE9r4JfKwVjWL
 
-dn: uid=Root,ou=staff,dc=wso2demo,dc=com
+dn: uid=root,ou=staff,dc=wso2demo,dc=com
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
 objectClass: top
 cn: Joe
 sn: Root
 displayName: Joe Root
-mail: joe.root@wso2demo.com
+mail: root@wso2demo.com
 givenNAme: Demo
 userPassword: {SSHA}w3fq1mE5iJkOe1QIMVaJ0M61xbNvd8p/
 
-dn: uid=Jane,ou=staff,dc=wso2demo,dc=com
+dn: uid=jane,ou=staff,dc=wso2demo,dc=com
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
 objectClass: top
 cn: Jane
 sn: Forsyth
 displayName: Jane Forsyth
-mail: jane.forsyth@wso2demo.com
+mail: jane@wso2demo.com
 givenNAme: Demo
 userPassword: {SSHA}aVeyjH1HyUYUO1CE9ypQxwFSuYhMqRpE
 
-dn: uid=Paul,ou=staff,dc=wso2demo,dc=com
+dn: uid=paul,ou=staff,dc=wso2demo,dc=com
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
 objectClass: top
 cn: Paul
 sn: Black
 displayName: Paul Black
-mail: paul.black@wso2demo.com
+mail: paul@wso2demo.com
 givenNAme: Demo
 userPassword: {SSHA}7dMj92PYv0GRYky4Jxp3Z8Q0SwrGBoBZ
 
@@ -60,13 +60,13 @@ dn: cn=eng,ou=groups,ou=staff,dc=wso2demo,dc=com
 objectClass: groupOfNames
 objectClass: top
 cn: eng
-member: uid=Sam,ou=staff,dc=wso2demo,dc=com
-member: uid=Root,ou=staff,dc=wso2demo,dc=com
+member: uid=sam,ou=staff,dc=wso2demo,dc=com
+member: uid=root,ou=staff,dc=wso2demo,dc=com
 
 
 dn: cn=sales,ou=groups,ou=staff,dc=wso2demo,dc=com
 objectClass: groupOfNames
 objectClass: top
 cn: sales
-member: uid=Jane,ou=staff,dc=wso2demo,dc=com
-member: uid=Paul,ou=staff,dc=wso2demo,dc=com
+member: uid=jane,ou=staff,dc=wso2demo,dc=com
+member: uid=paul,ou=staff,dc=wso2demo,dc=com
