@@ -282,13 +282,7 @@ listen {
 #  Make *sure* that 'preprocess' comes before any realm if you
 #  need to setup hints for the remote radius server
 authorize {
-        #
-        #  Take a User-Name, and perform some checks on it, for spaces and other
-        #  invalid characters.  If the User-Name appears invalid, reject the
-        #  request.
-        #
-        #  See policy.d/filter for the definition of the filter_username policy.
-        #
+     
         filter_uuid
         filter_google_otp
 
@@ -481,11 +475,7 @@ authorize {
 #  section.  Put them in the "post-auth" section instead.  That's what
 #  the post-auth section is for.
 #
-authenticate {
-        #
-        #  PAP authentication, when a back-end database listed
-        #  in the 'authorize' section supplies a password.  The
-        #  password can be clear-text, or encrypted.
+authenticate{
         Auth-Type PAP {
                 pap
                 if (&Google-Password){
